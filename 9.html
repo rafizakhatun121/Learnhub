@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multimrdia learning page</title>
+</head>
+<body>
+    <header>
+       <h1>CodeLearn Media Library</h1>
+       <p>Learn HTML through audio lessons, video tutorials,
+        transcripts, and helpful resources.</p>
+
+       <nav>
+        <a href="#lessons">Lessons</a>
+        <a href="#audio">Audio lessons</a>
+        <a href="#video">Video lessons</a>
+        <a href="#external-resource">External Resource</a>
+        <a href="#feedback">Feedback</a>
+       </nav>
+    </header>
+    <main>
+        <section id="lessons">
+         <h2>Available Learning Materials</h2>
+
+    <p>
+        This learning library contains beginner-friendly
+        HTML audio and video lessons.
+    </p>
+
+    <ul>
+        <li>HTML introduction audio lesson</li>
+        <li>Forms and tables video lesson</li>
+        <li>Lesson transcripts</li>
+        <li>External learning resources</li>
+    </ul>
+        </section>
+        <section id="audio">
+            <h2>Audio Lessions</h2>
+            <article>
+        <audio controls>
+            <source src="https://audio.com/firedies" type="audio/mpeg">
+            <source src="media/html-introduction.ogg" type="audio/ogg">
+            
+        </audio>
+         <p>
+        <a href="media/html-introduction.mp3" download>
+            Download the HTML introduction audio
+        </a>
+    </p>
+
+    <h4>Audio Transcript</h4>
+
+    <p>
+        HTML stands for HyperText Markup Language.
+        It is used to create the structure of webpages.
+    </p>
+            </article>
+            <article>
+    <h3>Lesson 02: HTML Forms</h3>
+
+    <p>
+        Learn how forms collect information from users.
+    </p>
+
+    <audio controls>
+        <source
+            src="media/html-forms.mp3"
+            type="audio/mpeg"
+        >
+
+        <source
+            src="media/html-forms.ogg"
+            type="audio/ogg"
+        >
+
+        Your browser does not support the audio element.
+    </audio>
+
+    <p>
+        <a href="media/html-forms.mp3" download>
+            Download the HTML forms audio lesson
+        </a>
+    </p>
+
+    <h4>Audio Transcript</h4>
+
+    <p>
+        HTML forms use input elements to collect
+        names, emails, passwords, and other information.
+    </p>
+</article>
+        </section>
+
+        <section id="video">
+         <h2>Video lessons</h2>    
+         <article>
+    <h3>Lesson 03: HTML Table Tutorial</h3>
+
+    <p>
+        This video explains table rows, columns,
+        headings, captions, and table structure.
+    </p>
+
+    <video
+        controls
+        width="600"
+        poster="images/table-video-cover.jpg"
+    >
+        <source
+            src="media/html-table.mp4"
+            type="video/mp4"
+        >
+
+        <source
+            src="media/html-table.webm"
+            type="video/webm"
+        >
+
+        <track
+            src="captions/html-table-en.vtt"
+            kind="captions"
+            srclang="en"
+            label="English"
+            default
+        >
+
+        Your browser does not support the video element.
+    </video>
+
+    <h4>Video Summary</h4>
+
+    <p>
+        The lesson explains how table, tr, th, and td
+        elements work together to display structured data.
+    </p>
+</article>
+<article>
+    <h3>Lesson 04: HTML Registration Form</h3>
+
+    <p>
+        Learn how to create an accessible registration form.
+    </p>
+
+    <video
+        controls
+        width="600"
+        poster="images/form-video-cover.jpg"
+    >
+        <source
+            src="media/html-form.mp4"
+            type="video/mp4"
+        >
+
+        <source
+            src="media/html-form.webm"
+            type="video/webm"
+        >
+
+        <track
+            src="captions/html-form-en.vtt"
+            kind="captions"
+            srclang="en"
+            label="English"
+            default
+        >
+
+        Your browser does not support the video element.
+    </video>
+
+    <details>
+        <summary>Read Video Transcript</summary>
+
+        <p>
+            HTML forms contain labels, inputs,
+            textareas, select elements, and buttons.
+        </p>
+    </details>
+</article>
+        </section>
+
+        <section id="external-resource">
+            
+    <h2>External Learning Resources</h2>
+
+    <article>
+        <h3>YouTube HTML Tutorial</h3>
+
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/e62D-aayveY?list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s" title="HTML - Tables - W3Schools.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </article>
+
+    <article>
+        <h3>HTML Reference Page</h3>
+
+        <iframe
+            src="https://www.tpointtech.com/html-tutorial"
+            title="Additional HTML learning resources"
+            width="800"
+            height="400"
+        ></iframe>
+    </article>
+</section>
+
+        
+        <section id="feedback">
+           <form action="/register" method="post">
+            <h3>Feedback Form</h3>
+            <fieldset>
+                <legend>Feedback form</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </fieldset>
+            <fieldset>
+    <legend>Lesson Information</legend>
+
+    <label for="favorite-lesson">
+        Favorite Lesson
+    </label>
+
+    <select
+        id="favorite-lesson"
+        name="favoriteLesson"
+        required
+    >
+        <option value="" selected disabled>
+            Select your favorite lesson
+        </option>
+
+        <option value="html-introduction">
+            Introduction to HTML
+        </option>
+
+        <option value="html-forms">
+            HTML Forms
+        </option>
+
+        <option value="html-tables">
+            HTML Tables
+        </option>
+
+        <option value="registration-form">
+            Registration Form
+        </option>
+    </select>
+</fieldset>
+<fieldset>
+    <legend>Rate This Learning Library</legend>
+
+    <input
+        type="radio"
+        id="rating-1"
+        name="rating"
+        value="1"
+        required
+    >
+    <label for="rating-1">1</label>
+
+    <input
+        type="radio"
+        id="rating-2"
+        name="rating"
+        value="2"
+    >
+    <label for="rating-2">2</label>
+
+    <input
+        type="radio"
+        id="rating-3"
+        name="rating"
+        value="3"
+    >
+    <label for="rating-3">3</label>
+
+    <input
+        type="radio"
+        id="rating-4"
+        name="rating"
+        value="4"
+    >
+    <label for="rating-4">4</label>
+
+    <input
+        type="radio"
+        id="rating-5"
+        name="rating"
+        value="5"
+    >
+    <label for="rating-5">5</label>
+</fieldset>
+<fieldset>
+    <legend>Which Topics Were Useful?</legend>
+
+    <input
+        type="checkbox"
+        id="topic-audio"
+        name="usefulTopics"
+        value="audio"
+    >
+    <label for="topic-audio">Audio Lessons</label>
+
+    <input
+        type="checkbox"
+        id="topic-video"
+        name="usefulTopics"
+        value="video"
+    >
+    <label for="topic-video">Video Lessons</label>
+
+    <input
+        type="checkbox"
+        id="topic-forms"
+        name="usefulTopics"
+        value="forms"
+    >
+    <label for="topic-forms">HTML Forms</label>
+
+    <input
+        type="checkbox"
+        id="topic-tables"
+        name="usefulTopics"
+        value="tables"
+    >
+    <label for="topic-tables">HTML Tables</label>
+</fieldset>
+<fieldset>
+    <legend>Your Feedback</legend>
+
+    <div>
+        <label for="feedback-message">
+            Write Your Feedback
+        </label>
+
+        <textarea
+            id="feedback-message"
+            name="feedbackMessage"
+            rows="6"
+            maxlength="800"
+            placeholder="Share your learning experience"
+            required
+        ></textarea>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Would You Recommend This Website?</legend>
+
+    <input
+        type="radio"
+        id="recommend-yes"
+        name="recommend"
+        value="yes"
+        required
+    >
+    <label for="recommend-yes">Yes</label>
+
+    <input
+        type="radio"
+        id="recommend-no"
+        name="recommend"
+        value="no"
+    >
+    <label for="recommend-no">No</label>
+</fieldset>
+<button type="submit">
+    Submit Feedback
+</button>
+
+<button type="reset">
+    Clear Form
+</button>
+           </form>
+        </section>
+
+
+    </main>
+    <footer>
+<p>
+        &copy; 2026 CodeLearn Media Library.
+        All rights reserved.
+    </p>
+
+    <p>
+        <a href="mailto:support@example.com">
+            Contact the Learning Support Team
+        </a>
+    </p>
+    </footer>
+</body>
+</html>
